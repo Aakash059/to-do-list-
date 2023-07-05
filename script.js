@@ -18,19 +18,6 @@ function addTask(){
     saveData();
 }
 
-//me
-// inputBox=doucument.getelementById("input-box");
-// listContainer= document.getElementById("list-container");
-
-// function addTask(){
-//     if(inputBox.value=""){
-//         alert("You have to write something");
-//     }else{
-//         let li=document.createElement("li");
-//         li.innerHTML=inputBox.value;
-//         listContainer.appendChild(li);
-//     }
-// }
 
 // js for click function
 listContainer.addEventListener("click",function(e){
@@ -45,15 +32,6 @@ listContainer.addEventListener("click",function(e){
 }, false);
 
 
-//me
-// listContainer.addEventtListner("click",function(e){
-//     if(e.target.tagName==="LI"){
-//         e.target.classList.toggle("checked");
-        
-//     }
-// })
-//store data
-
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -64,13 +42,3 @@ function showTask(){
     listContainer.innerHTML=localStorage.getItem("data");
 }
 showTask();
-
-
-// function addTask(){
-//    if( inputBox.value="");
-//     alert("You have to write something");
-//     else{
-//         let li=document.createElement("li").innerHtml=inputBox.value;
-//         listContainer=appendChild(li);
-//     }
-// }
